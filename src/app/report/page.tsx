@@ -10,7 +10,7 @@ const ReportPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const report = await axios.get('http://localhost:3455/api/report');
+        const report = await axios.get('https://donate-backend-l3fb.onrender.com/api/report');
         console.log(report.data);
         setTotalDonations(report.data.total_donations);
         setNumDonors(report.data.total_donors);

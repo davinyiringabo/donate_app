@@ -20,7 +20,7 @@ const EditCampaign = ({
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.put(`http://localhost:3455/api/campaigns/update`, {
+      await axios.put(`https://donate-backend-l3fb.onrender.com/api/campaigns/update`, {
         id: campaign.id,
         name: newName,
       });

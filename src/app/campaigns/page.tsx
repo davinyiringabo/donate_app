@@ -21,7 +21,7 @@ const CampaignsPage = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const fetchCampaigns = async () => {
     setLoading(true);
-    const response = await axios.get("http://localhost:3455/api/campaigns/all");
+    const response = await axios.get("https://donate-backend-l3fb.onrender.com/api/campaigns/all");
     setCampaigns(response.data.reverse());
     setLoading(false);
   };

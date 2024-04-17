@@ -20,7 +20,7 @@ const DonationsPage = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const fetchDonations = async () => {
     setLoading(true);
-    const response = await axios.get("http://localhost:3455/api/donations/all");
+    const response = await axios.get("https://donate-backend-l3fb.onrender.com/api/donations/all");
     console.log("Donations", response);
     setDonors(response.data.reverse());
     setLoading(false);

@@ -19,7 +19,7 @@ const DeleteCampaign = ({
 
     try {
       await axios.delete(
-        `http://localhost:3455/api/campaigns/delete/${campaign.id}`,
+        `https://donate-backend-l3fb.onrender.com/api/campaigns/delete/${campaign.id}`,
       );
       notifications.show({
         title: "Delete Campaign",

@@ -17,7 +17,7 @@ const AddCampaign = ({ close }: { close: Function }) => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:3455/api/campaigns/create", formData)
+      .post("https://donate-backend-l3fb.onrender.com/api/campaigns/create", formData)
       .then(() => {
         notifications.show({
           title: "Register Campaign",
